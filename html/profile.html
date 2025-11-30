@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkie – Profil</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">Talkie</div>
+      <div class="nav-right">
+        <a href="feed.html">Feed</a>
+        <a href="profile.html">Min profil</a>
+        <button type="button" id="logoutButton">Logg ut</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="card">
+        <div id="profileHeader" class="profile-header"></div>
+        <p id="profileError" class="error-message"></p>
+      </section>
+
+      <section class="card" style="margin-top: 1rem">
+        <h3>Poster</h3>
+        <div id="profilePosts" class="posts-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="../js/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkie – Feed</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">Talkie</div>
+      <div class="nav-right">
+        <a href="feed.html">Feed</a>
+        <a href="profile.html">Min profil</a>
+        <button type="button" id="logoutButton">Logg ut</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="feed-header">
+        <h2>Feed</h2>
+        <form id="searchForm" class="feed-search">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Søk i poster..."
+            aria-label="Søk i poster"
+          />
+          <button type="submit" class="secondary">Søk</button>
+          <button type="button" id="clearSearchButton" class="secondary">
+            Tøm
+          </button>
+        </form>
+      </section>
+
+      <section class="card" style="margin-bottom: 1rem">
+        <h3>Ny post</h3>
+        <form id="createPostForm">
+          <div>
+            <label for="title">Tittel</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+
+          <div>
+            <label for="body">Tekst</label>
+            <textarea id="body" name="body"></textarea>
+          </div>
+
+          <div>
+            <label for="media">Bilde-URL (valgfritt)</label>
+            <input type="url" id="media" name="media" />
+          </div>
+
+          <button type="submit" class="primary">Publiser</button>
+          <p id="createPostMessage" class="error-message"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h3>Alle poster</h3>
+        <div id="postsContainer" class="posts-list"></div>
+        <p id="postsError" class="error-message"></p>
+      </section>
+    </main>
+
+    <script type="module" src="../js/feed.js"></script>
+  </body>
+</html>

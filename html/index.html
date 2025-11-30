@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkie – Logg inn</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-header">
+        <h1>Talkie</h1>
+        <p>Logg inn for å se feeden</p>
+      </div>
+
+      <div class="card">
+        <form id="loginForm">
+          <div>
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="password">Passord</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button type="submit" class="primary">Logg inn</button>
+
+          <p id="loginError" class="error-message"></p>
+        </form>
+      </div>
+
+      <p style="margin-top: 1rem; text-align: center">
+        Har du ikke bruker?
+        <a href="register.html">Registrer deg på Talkie</a>
+      </p>
+    </div>
+
+    <script type="module" src="../js/login.js"></script>
+  </body>
+</html>

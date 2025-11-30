@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkie – Registrer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-header">
+        <h1>Talkie</h1>
+        <p>Lag en konto med Noroff-epost</p>
+      </div>
+
+      <div class="card">
+        <form id="registerForm">
+          <div>
+            <label for="name">Brukernavn</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">E-post (stud.noroff.no)</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="password">Passord (minst 8 tegn)</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div>
+            <label for="avatar">Avatar (bilde-URL – valgfritt)</label>
+            <input type="url" id="avatar" name="avatar" />
+          </div>
+
+          <button type="submit" class="primary">Registrer</button>
+
+          <p id="registerError" class="error-message"></p>
+          <p id="registerSuccess" class="success-message"></p>
+        </form>
+      </div>
+
+      <p style="margin-top: 1rem; text-align: center">
+        Har du allerede bruker?
+        <a href="index.html">Logg inn</a>
+      </p>
+    </div>
+
+    <script type="module" src="../js/register.js"></script>
+  </body>
+</html>

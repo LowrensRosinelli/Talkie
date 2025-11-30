@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Talkie – Post</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">Talkie</div>
+      <div class="nav-right">
+        <a href="feed.html">Feed</a>
+        <a href="profile.html">Min profil</a>
+        <button type="button" id="logoutButton">Logg ut</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="card">
+        <div id="postDetails"></div>
+        <p id="postError" class="error-message"></p>
+      </section>
+
+      <section class="card" id="editSection" style="margin-top: 1rem; display: none">
+        <h3>Rediger post</h3>
+        <form id="editPostForm">
+          <div>
+            <label for="editTitle">Tittel</label>
+            <input type="text" id="editTitle" name="editTitle" required />
+          </div>
+
+          <div>
+            <label for="editBody">Tekst</label>
+            <textarea id="editBody" name="editBody"></textarea>
+          </div>
+
+          <div>
+            <label for="editMedia">Bilde-URL (valgfritt)</label>
+            <input type="url" id="editMedia" name="editMedia" />
+          </div>
+
+          <button type="submit" class="primary">Lagre endringer</button>
+          <button type="button" id="deletePostButton" class="secondary">
+            Slett post
+          </button>
+
+          <p id="editPostMessage" class="error-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="../js/post.js"></script>
+  </body>
+</html>
