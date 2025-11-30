@@ -1,0 +1,2 @@
+# Talkie
+Noroff JS course
